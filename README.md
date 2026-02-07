@@ -1,1 +1,58 @@
-# love-page
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>오늘 나랑 데이트할래?</title>
+  <style>
+    body {
+      background: #ffe8ec;
+      font-family: "Noto Sans KR", sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #ff5c8a;
+    }
+    .buttons {
+      margin-top: 40px;
+    }
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 16px 40px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin: 10px;
+    }
+    #yes {
+      background: #ff5c8a;
+      color: white;
+      font-size: 2rem;
+      padding: 25px 60px;
+    }
+    #no {
+      background: #ccc;
+      color: #666;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>오늘 나랑 데이트할래?</h1>
+  <div class="buttons">
+    <button id="yes">YES 💖</button>
+    <button id="no" disabled>NO 🙅‍♂️</button>
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById("yes");
+    yesBtn.addEventListener("click", () => {
+      document.body.innerHTML = "<h1 style='color:#ff5c8a;font-size:3rem;'>오예~~~!!! 💕</h1>";
+      document.body.style.background = '#fff0f4';
+    });
+  </script>
+</body>
+</html>
